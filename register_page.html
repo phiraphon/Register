@@ -1,0 +1,110 @@
+<!Doctype html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/greenstyle.css" media="screen" title="no title" charset="utf-8">
+  <script type="text/javascript">
+  function detectNull(first,last,isage,user,pass) {
+    if (first == "") {
+      window.alert("Please insert Firstname");
+      return false;
+    }else if (last == "") {
+      window.alert("Please insert Lastname");
+      return false;
+    }else if (isage == "") {
+      window.alert("Please insert Age");
+      return false;
+    }else if (user == "") {
+      window.alert("Please insert Username/E-mail");
+      return false;
+    }else if (pass == "") {
+      window.alert("Please insert Password");
+      return false;
+    }
+  }
+  function detecAge(num_age){
+    if (num_age <= 0 || num_age > 100) {
+      window.alert("Your age is wrong, please insert again");
+      return false;
+    }
+  }
+  function lengthPassword(check_pass){
+    if (check_pass.length < 8) {
+      window.alert("Password greater than 8 character");
+      return false;
+    }
+  }
+  </script>
+</head>
+<body>
+  <nav>
+    <h1 class="title">Play with HTML</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="animation_page.html">Animation</a></li>
+      <li><a href="drawing_page.html">Darwing</a></li>
+      <li><a href="#">About</a></li>
+      <li><a class="active" href="register_page.html">Sign in</a></li>
+    </ul>
+  </nav>
+  <div class="contrainer" id="reg">
+  <form action="" name="regis">
+    <p id="demo">
+      Register
+    </p><br>
+    <p>
+      Firstname*
+    </p>
+    <input id="myfirst" type="text" name="firstname"><br>
+    <script type="text/javascript">
+
+    </script>
+    <p>
+      Lastname*
+    </p>
+    <input id="mylast" type="text" name="lastname"><br>
+    <script type="text/javascript">
+
+    </script>
+    <p>
+      Age*
+    </p>
+    <input id="myage" type="number" name="age"><br>
+    <p>
+      Sex*
+    </p>
+    <input type="radio" name="sex" value="male" checked>Male
+    <input type="radio" name="sex" value="female">Female<br>
+    <p>
+      Email/Username*
+    </p>
+    <input id="myuser"type="text" name="username"><br>
+    <p>
+      Password*
+    </p>
+    <input id="mypass" type="password" name="password"><br>
+    <button onclick="checkInput()">Sign in</button>
+    <script type="text/javascript">
+    function checkInput(){
+    var firstname = document.getElementById("myfirst").value;
+    var lastname = document.getElementById('mylast').value;
+    var age = document.getElementById('myage').value;
+    var username = document.getElementById('myuser').value;
+    var password = document.getElementById('mypass').value;
+    detectNull(firstname,lastname,age,username,password);
+    detecAge(age);
+    lengthPassword(password);
+    //document.getElementById("demo").innerHTML = username;
+    }
+
+    </script>
+  </form>
+  <p>
+    *   It's not  null
+  </p>
+  <br>
+
+  </div>
+</body>
+</html>
