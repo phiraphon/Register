@@ -3,39 +3,7 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="css/greenstyle.css" media="screen" title="no title" charset="utf-8">
-  <script type="text/javascript">
-  function detectNull(first,last,isage,user,pass) {
-    if (first == "") {
-      window.alert("Please insert Firstname");
-      return false;
-    }else if (last == "") {
-      window.alert("Please insert Lastname");
-      return false;
-    }else if (isage == "") {
-      window.alert("Please insert Age");
-      return false;
-    }else if (user == "") {
-      window.alert("Please insert Username/E-mail");
-      return false;
-    }else if (pass == "") {
-      window.alert("Please insert Password");
-      return false;
-    }
-  }
-  function detecAge(num_age){
-    if (num_age <= 0 || num_age > 100) {
-      window.alert("Your age is wrong, please insert again");
-      return false;
-    }
-  }
-  function lengthPassword(check_pass){
-    if (check_pass.length < 8) {
-      window.alert("Password greater than 8 character");
-      return false;
-    }
-  }
-  </script>
+  <link rel="stylesheet" href="greenstyle.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
   <nav>
@@ -84,21 +52,7 @@
       Password*
     </p>
     <input id="mypass" type="password" name="password"><br>
-    <button onclick="checkInput()">Sign in</button>
-    <script type="text/javascript">
-    function checkInput(){
-    var firstname = document.getElementById("myfirst").value;
-    var lastname = document.getElementById('mylast').value;
-    var age = document.getElementById('myage').value;
-    var username = document.getElementById('myuser').value;
-    var password = document.getElementById('mypass').value;
-    detectNull(firstname,lastname,age,username,password);
-    detecAge(age);
-    lengthPassword(password);
-    //document.getElementById("demo").innerHTML = username;
-    }
-
-    </script>
+    <button>Sign in</button>
   </form>
   <p>
     *   It's not  null
