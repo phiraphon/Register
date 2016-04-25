@@ -1,0 +1,125 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #e7e7e7;
+}
+header{
+  background-color: white;
+  padding: 10px;
+  margin: 40px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 30px 0 rgba(0, 0, 0, 0.2);
+}
+header img{
+  width: 100%;
+}
+nav{
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.title{
+  float: left;
+  padding: 7px;
+  margin: 0px 50% 0px 0px;
+  color: #04a0bb;
+}
+ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+li{
+  float: left;
+}
+li a{
+  display: block;
+  color: #04a0bb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #00c2ff;
+    color: white;
+}
+.active {
+    background-color: #04a0bb;
+    color: white;
+}
+article{
+  float: left;
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin: 50px 0px 100px 8%;
+}
+.name{
+  background-color: #04a0bb;
+  color: white;
+  padding: 50px 10px;
+  font-size: 40px;
+}
+.detail{
+  padding: 10px;
+  background-color: white;
+}
+footer{
+  clear: left;
+  text-align: center;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+#screen{
+  width: 100%;
+  height: 500px;
+  margin: 50px 0px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 15px 0 rgba(0, 0, 0, 0.12);
+}
+#reg{
+  width: 70%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 80px 15%;
+  padding: 40px;
+  border-radius: 8px;
+}
+p{
+  color: #04a0bb;
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+input[type=text], input[type=password], input[type=number]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0px;
+  border: 3px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+}
+input[type=text]:focus{
+  background-color: lightgray;
+}
+input[type=password]:focus{
+  background-color: #fff2b9;
+}
+input[type=radio]{
+  margin: 10px 0px;
+}
+button{
+  width: 120px;
+  background-color: #04a0bb;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
